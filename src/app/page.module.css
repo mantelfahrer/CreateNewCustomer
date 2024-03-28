@@ -3,10 +3,63 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  background-color: aqua;
+  background-color: #1b192f;
   height: 100%;
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 20px 0 50px 0;
+}
+
+.tabs {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.tab {
+  width: 130px;
+  height: 100%;
+  background-color: #373864;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.tabInactive {
+  width: 130px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  background-color: #2f2c4b;
+  cursor: pointer;
+}
+
+.tabNew {
+  width: 50px;
+  height: 100%;
+  background-color: #5F83D8;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.folder {
+  width: 100%;
+  height: calc(100% - 40px);
+  background-color: #373864;
+  border-radius: 0 10px 10px 10px;
 }
