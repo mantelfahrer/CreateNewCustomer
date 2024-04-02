@@ -17,8 +17,8 @@ export default function RootLayout({
       <body className="body">
         {children}
         <footer className="footer">
-          <Link href="/privacypolicy">Privacy Policy</Link>
-          <Link href="/termsofservice">Terms of Service</Link>
+          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/terms-of-service">Terms of Service</Link>
         </footer>
       </body>
     </html>
