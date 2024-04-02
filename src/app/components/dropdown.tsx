@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { FC } from "react";
 import styles from "./dropdown.module.css";
@@ -24,10 +24,21 @@ export const Dropdown: FC<Props> = ({ name, label, value, setValue }) => {
         <option className={styles.placeholder} value="">
           --Select--
         </option>
-        <option value="firstOption">First Option</option>
-        <option value="secondOption">Second Option</option>
-        <option value="thirdOption">Third Option</option>
-        <option value="fourthOption">Fourth Option</option>
+        <option value="insurance">Insurance</option>
+        <option value="banking">Banking</option>
+        <option value="automotiveTransportation">
+          Automotive & Transportation
+        </option>
+        <option value="retail">Retail</option>
+        <option value="lifeSciences">Life Sciences</option>
+        <option value="manufacturingIndustry">Manufacturing Industry</option>
+        <option value="dataAnalytics">Data & Analytics</option>
+        <option value="digitalExperience">Digital Experience</option>
+        <option value="microsoft">Microsoft</option>
+        <option value="lottery">Lottery</option>
+        <option value="sports">Sports</option>
+        <option value="health">Health</option>
+        <option value="financeControlling">Finance & Controlling</option>
       </select>
     </div>
   );
