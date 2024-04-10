@@ -1,11 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
 import customersReducer from "./features/customers/customersSlice";
+import { hordeApi } from "./features/api/apiSlice";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       customers: customersReducer,
+      [hordeApi.reducerPath]: hordeApi.reducer,
     },
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware().concat(hordeApi.middleware),
   });
 };
 

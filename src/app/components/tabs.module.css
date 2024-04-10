@@ -8,28 +8,20 @@
 }
 
 .tab {
-  width: 130px;
+  width: 160px;
   height: 100%;
   background-color: #373864;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border-radius: 10px 10px 0 0;
   cursor: pointer;
 }
 
 .tabInactive {
-  width: 130px;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px 10px 0 0;
   background-color: #2f2c4b;
-  cursor: pointer;
-  color: #AAAAAA;
+  color: #aaaaaa;
 }
 
 .tabNew {
@@ -43,4 +35,9 @@
   align-items: center;
   border-radius: 10px 10px 0 0;
   cursor: pointer;
+}
+
+.tabNew:hover {
+  background-color: #FEC501;
+  color: #5f83d8;
 }
