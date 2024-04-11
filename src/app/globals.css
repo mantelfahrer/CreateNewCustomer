@@ -29,7 +29,9 @@ body {
   background-color: #1b192f;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -61,7 +63,8 @@ button {
   font-size: 20px;
   cursor: pointer;
   text-align: center;
-  transition: border-color 100ms ease-in-out, transform 100ms ease-in-out, color 100ms ease-in-out;
+  transition: border-color 100ms ease-in-out, transform 100ms ease-in-out,
+    color 100ms ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
 }

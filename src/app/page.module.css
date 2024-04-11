@@ -20,7 +20,7 @@
 }
 
 .folder::-webkit-scrollbar {
-  width: 1rem;
+  width: 0.5rem;
 }
 .folder::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);

@@ -45,6 +45,7 @@ export const authSlice = createSlice({
           customer.generatedData = undefined;
           customer.requestPending = false;
           customer.requestError = false;
+          state.activeCustomer = customer;
         }
       });
     },
