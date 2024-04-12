@@ -1,12 +1,43 @@
 import { RequestStatusKobold } from "./hordeModels";
 
+export type CustomerRequestData = {
+  data?: RequestStatusKobold;
+  idApi?: string;
+  pending: boolean;
+  error: boolean;
+};
+
 export type Customer = {
-  // client side id
   id: string;
   businessField: string;
-  // id for use with the api
-  idApi?: string;
-  requestPending: boolean;
-  requestError: boolean;
-  generatedData?: RequestStatusKobold;
+  overview: CustomerRequestData;
+  uiUx: CustomerRequestData;
+  featureList: CustomerRequestData;
+  pagesTree: CustomerRequestData;
 };
+
+export function createInitialCustomerData(id: string): Customer {
+  return {
+    id,
+    businessField: "",
+    overview: {
+      data: undefined,
+      idApi: undefined,
+      pending: false,
+      error: false,
+    },
+    uiUx: { data: undefined, idApi: undefined, pending: false, error: false },
+    featureList: {
+      data: undefined,
+      idApi: undefined,
+      pending: false,
+      error: false,
+    },
+    pagesTree: {
+      data: undefined,
+      idApi: undefined,
+      pending: false,
+      error: false,
+    },
+  };
+}
